@@ -1,0 +1,17 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.env
+.DS_Store
+.venv/
+venv/
+# Large data and model files
+models/*.pkl
+data/raw/*.csv
+data/processed/*.csv
+
+# Cache files
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.env
