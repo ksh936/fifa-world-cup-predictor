@@ -9,7 +9,6 @@ import pandas as pd
 
 from src.prediction import (
     load_prediction_assets,
-    build_latest_team_features,
     predict_match
 )
 
@@ -26,8 +25,7 @@ st.write(
 )
 
 try:
-    model_data, model, features = load_prediction_assets()
-    latest_team_features = build_latest_team_features(model_data)
+    model, features, latest_team_features = load_prediction_assets()
 
     st.success("Improved ranking-based model loaded successfully.")
 
